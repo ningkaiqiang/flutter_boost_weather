@@ -25,9 +25,9 @@ class TransparentWidgetState extends State<TransparentWidget> {
           alignment: Alignment.topCenter,
           margin: const EdgeInsets.only(top: 50, left: 10, right: 10),
           height: 700,
-          // decoration: new BoxDecoration(
-          //     border: Border.all(color: Colors.black, width: 1.0)
-          // ),
+          decoration: new BoxDecoration(
+              border: Border.all(color: Colors.black, width: 1.0)
+          ),
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
@@ -36,9 +36,7 @@ class TransparentWidgetState extends State<TransparentWidget> {
                   margin: const EdgeInsets.only(left: 20, top: 40),
                   child: Text(
                     '城市搜索',
-                    style: TextStyle(
-                        fontSize: 30, color: Colors.black
-                    ),
+                    style: TextStyle(fontSize: 30, color: Colors.black),
                     textAlign: TextAlign.left,
                   ),
                 ),
@@ -51,9 +49,7 @@ class TransparentWidgetState extends State<TransparentWidget> {
                     controller: _controller,
                     decoration: new InputDecoration(
                       hintText: '输入要搜索的城市吧',
-                      hintStyle: new TextStyle(
-                          fontSize: 17
-                      ),
+                      hintStyle: new TextStyle(fontSize: 17),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(20),

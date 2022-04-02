@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_boost/flutter_boost.dart';
+import 'package:flutter_boost_weather/methodChannel/method_platfrom_channel.dart';
 import 'package:flutter_boost_weather/search_city/search_city.dart';
 
 void main() {
@@ -8,6 +9,7 @@ void main() {
       .addGlobalObserver(AppGlobalPageVisibilityObserver());
   CustomFlutterBinding();
   runApp(MyApp());
+  WeatherMethodChannel.initMethodChannel();
 }
 
 class CustomFlutterBinding extends WidgetsFlutterBinding with BoostFlutterBinding {}
